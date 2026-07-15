@@ -1,185 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Career Pilot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPilot</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <a class="logo" href="#home">CareerPilot</a>
 
-<header>
-        <h2> Career Pilot</h2>
-    <nav>
-        <a href="#home">home</a>
-        <a href="#profile">profile</a>
-        <a href="#task">Tasks</a>
-        <a href="#coding">Coding</a>
-    </nav>
-</header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#profile">Profile</a>
+            <a href="#tasks">Tasks</a>
+            <a href="#coding">Coding</a>
+        </nav>
+    </header>
 
-<main>
-    <section id="home">
-        <h1> Build your career<br>Tack your progess</h1>
-        <p> our career pilot help students manage tasks,
-            profiles, there daily tasks and pratice coding
-        </p>
+    <main class="page">
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>Build your career. Track your progress.</h1>
+                <p>CareerPilot helps students manage profiles, daily tasks, and coding practice in one place.</p>
+                <a href="#dashboard" class="btn">Get Started</a>
+            </div>
 
-        <a href="#profile">Get started</a>
+            <div class="journey-card">
+                <h2>Your Career Journey</h2>
+                <ul>
+                    <li>Student Profile</li>
+                    <li>Task Management</li>
+                    <li>Coding Practice</li>
+                </ul>
+            </div>
+        </section>
 
-        <h3>You Career journey</h3>
+        <section id="dashboard" class="dashboard-section">
+            <div class="dashboard-grid">
+                <article class="dashboard-card">
+                    <h3>Student Profile</h3>
+                    <p>Create and manage your career profile.</p>
+                    <a href="#profile">Open Profile</a>
+                </article>
 
-        <ul>
-            <li>student profile</li>
-            <li>Task Managment</li>
-            <li>Coding pratice</li>
-        </ul>
-        
-    </section>
-<hr>
-<section>
-    <h2>career pilot dashboard</h2>
-    <div>
-        <h3>student profile</h3>
-        <p>create and manage your profile</p>
-        <a href="#profile">create profile</a>
-    </div>
-        <div>
-        <h3>Task manager</h3>
-        <p>origanize and track your tasks</p>
-        <a href="#task">view tasks</a>
-    </div>
-        <div>
-        <h3>Coding prtice</h3>
-        <p>track your coding problem progess</p>
-        <a href="#coding">view tracker</a>
-    </div>
-</section>
-<hr>
-<section id="profile">
-    <h2>student profile</h2>
-    <p>create your CareerPilot student profile</p>
+                <article class="dashboard-card">
+                    <h3>Task Manager</h3>
+                    <p>Organize and track your daily tasks.</p>
+                    <a href="#tasks">View Tasks</a>
+                </article>
 
-    <form action="">
-        <lable for="">Student name</lable>
-        <br>
-        <input type="text" placeholder="Enter your name">
-        <br>
+                <article class="dashboard-card">
+                    <h3>Coding Practice</h3>
+                    <p>Track your coding problem progress.</p>
+                    <a href="#coding">View Tracker</a>
+                </article>
+            </div>
+        </section>
 
-        <lable for="">Roll no</lable>
-        <br>
-        <input type="text" placeholder="Enter your roll no">
-        <br>
-        <lable for="">Branch</lable>
-        <br>
-        <input type="text" placeholder="Enter your Branch">
-        <br>
+        <section id="profile" class="section">
+            <div class="section-heading">
+                <h1>Student Profile</h1>
+                <p>Create your CareerPilot student profile.</p>
+            </div>
 
-        <lable for="">Year</lable>
-        <br>
-        <input type="text" placeholder="Enter Year">
-        <br>
-        <lable for="">Career Goal</lable>
-        <br>
-        <input type="text" placeholder="Example: cloud devop">
-        <br><br>
-        <button type="button">create profile</button>
-    </form>
-   
-</section>
-<hr>
+            <form class="form-panel profile-form">
+                <label>
+                    Student Name
+                    <input type="text" placeholder="Enter your name">
+                </label>
 
-<section id="task">
-    <h2>Task manager</h2>
-    <p>plan your task and track you tasks</p>
-    <form action="">
-        <lable>Task Title</lable>
-        <br>
-        <input type="text" placeholder="enter your title">
-        <br><br>
-        <lable>Due date</lable>
-        <br>
-        <input type="date">
-        <br><br>
-        <button type="button"> Add task</button>
-        </form>
-        <div>
-            <ol>
-                <h4>Complete python assigement</h4>
-                <p>Due Date</p>
-                <p>status:Pending</p>
+                <label>
+                    Roll Number
+                    <input type="text" placeholder="Enter roll number">
+                </label>
 
-                <h4>Pratice DSA problems</h4>
-                <p>Due Date</p>
-                <p>status:completed</p>
-            </ol>
-        </div>
-</section>
-<hr>
+                <label>
+                    Branch
+                    <input type="text" placeholder="Enter branch">
+                </label>
 
+                <label>
+                    Year
+                    <input type="text" placeholder="Enter year">
+                </label>
 
-<section id="coding">
+                <label class="full-width">
+                    Career Goal
+                    <input type="text" placeholder="Example: Software Engineer">
+                </label>
 
-    <h2>Coding Pratice</h2>
-    <p>Track coding problem from diffrent platforms</p>
+                <button type="button">Create Profile</button>
+            </form>
+        </section>
 
-    <form>
-        <lable for="">Problem Title</lable>
-        <br>
-        <input type="text" placeholder="Enter Title">
-        <br>
-        <lable for="">Platform</lable>
-        <br>
-        <input type="text" placeholder="Platform">
-        <br><br>
-        <label for="">Difficulty</label>
-        <br>
-        <select name=""id="">
-        <option value="">easy</option>
-        <option value="">mid</option>
-        <option value="">hard</option>
-        </select>
-        <br><br>
-        <select name=""id="">
-        <option value="">solved</option>
-        <option value="">unsolved</option>
-        </select>
-        <br><br>
-        <button type="button">Add problem</button>
-        <br><br>
-        <table border="1">
-            <thead>
-            <tr>
-                <th>problem</th>
-                <th>platform</th>
-                <th>diffuculty</th>
-                <th>status</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>two sum</td>
-                    <td>leetcode</td>
-                    <td>easy</td>
-                    <td>completed</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>vaid anagram</td>
-                    <td>leetcode</td>
-                    <td>easy</td>
-                    <td>pending</td>
-                </tr>
-            </tbody>
-        
+        <section id="tasks" class="section">
+            <div class="section-heading">
+                <h1>Task Manager</h1>
+                <p>Plan your tasks and track your progress.</p>
+            </div>
 
+            <form class="inline-form task-form">
+                <input type="text" placeholder="Enter task title" aria-label="Task title">
+                <input type="date" aria-label="Due date">
+                <button type="button">Add Task</button>
+            </form>
 
-        </table>
-    </form>
-</section>
+            <div class="task-list">
+                <article class="task-item">
+                    <div>
+                        <h3>Complete Python Assignment</h3>
+                        <p>Due Date: 15 July 2026</p>
+                    </div>
+                    <span class="badge pending">Pending</span>
+                </article>
 
-<footer>
-    <h3>Career Pilot</h3>
-    <p>Build skills. Track progess . Achive Your career goal.</p>
-</footer>
-</main>
+                <article class="task-item">
+                    <div>
+                        <h3>Practice DSA Problems</h3>
+                        <p>Due Date: 16 July 2026</p>
+                    </div>
+                    <span class="badge complete">Completed</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="coding" class="section">
+            <div class="section-heading">
+                <h1>Coding Practice Tracker</h1>
+                <p>Track coding problems from different platforms.</p>
+            </div>
+
+            <form class="inline-form coding-form">
+                <input type="text" placeholder="Problem Title" aria-label="Problem title">
+                <input type="text" placeholder="Platform" aria-label="Platform">
+                <select aria-label="Difficulty">
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+                <select aria-label="Status">
+                    <option>Solved</option>
+                    <option>Pending</option>
+                </select>
+                <button type="button">Add Problem</button>
+            </form>
+
+            <div class="table-panel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Platform</th>
+                            <th>Difficulty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Two Sum</td>
+                            <td>LeetCode</td>
+                            <td>Easy</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Valid Anagram</td>
+                            <td>LeetCode</td>
+                            <td>Easy</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>CareerPilot</h2>
+        <p>Build Skills. Track Progress. Achieve Your Career Goals.</p>
+    </footer>
 </body>
 </html>
