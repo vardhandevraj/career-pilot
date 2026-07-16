@@ -276,6 +276,10 @@ button {
     gap: 18px;
 }
 
+#profileDisplay {
+    margin-top: 24px;
+}
+
 .task-item {
     display: flex;
     align-items: center;
@@ -305,6 +309,7 @@ button {
     padding: 0 22px;
     border-radius: 999px;
     font-size: 19px;
+    cursor: pointer;
 }
 
 .badge.pending {
