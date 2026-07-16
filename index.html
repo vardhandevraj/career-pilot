@@ -12,7 +12,6 @@
 
         <nav class="navbar" aria-label="Main navigation">
             <a href="#home">Home</a>
-            <a href="#dashboard">Dashboard</a>
             <a href="#profile">Profile</a>
             <a href="#tasks">Tasks</a>
             <a href="#coding">Coding</a>
@@ -65,34 +64,36 @@
                 <p>Create your CareerPilot student profile.</p>
             </div>
 
-            <form class="form-panel profile-form">
+            <form id="profileForm" class="form-panel profile-form">
                 <label>
                     Student Name
-                    <input type="text" placeholder="Enter your name">
+                    <input id="studentName" type="text" placeholder="Enter your name">
                 </label>
 
                 <label>
                     Roll Number
-                    <input type="text" placeholder="Enter roll number">
+                    <input id="rollNumber" type="text" placeholder="Enter roll number">
                 </label>
 
                 <label>
                     Branch
-                    <input type="text" placeholder="Enter branch">
+                    <input id="branch" type="text" placeholder="Enter branch">
                 </label>
 
                 <label>
                     Year
-                    <input type="text" placeholder="Enter year">
+                    <input id="year" type="text" placeholder="Enter year">
                 </label>
 
                 <label class="full-width">
                     Career Goal
-                    <input type="text" placeholder="Example: Software Engineer">
+                    <input id="careerGoal" type="text" placeholder="Example: Software Engineer">
                 </label>
 
-                <button type="button">Create Profile</button>
+                <button id="createProfileBtn" type="button">Create Profile</button>
             </form>
+
+            <div id="profileDisplay"></div>
         </section>
 
         <section id="tasks" class="section">
@@ -102,12 +103,12 @@
             </div>
 
             <form class="inline-form task-form">
-                <input type="text" placeholder="Enter task title" aria-label="Task title">
-                <input type="date" aria-label="Due date">
-                <button type="button">Add Task</button>
+                <input id="taskTitle" type="text" placeholder="Enter task title" aria-label="Task title">
+                <input id="taskDueDate" type="date" aria-label="Due date">
+                <button id="addTaskBtn" type="button">Add Task</button>
             </form>
 
-            <div class="task-list">
+            <div id="taskList" class="task-list">
                 <article class="task-item">
                     <div>
                         <h3>Complete Python Assignment</h3>
@@ -133,18 +134,18 @@
             </div>
 
             <form class="inline-form coding-form">
-                <input type="text" placeholder="Problem Title" aria-label="Problem title">
-                <input type="text" placeholder="Platform" aria-label="Platform">
-                <select aria-label="Difficulty">
+                <input id="problemTitle" type="text" placeholder="Problem Title" aria-label="Problem title">
+                <input id="platformInput" type="text" placeholder="Platform" aria-label="Platform">
+                <select id="difficultySelect" aria-label="Difficulty">
                     <option>Easy</option>
                     <option>Medium</option>
                     <option>Hard</option>
                 </select>
-                <select aria-label="Status">
+                <select id="statusSelect" aria-label="Status">
                     <option>Solved</option>
                     <option>Pending</option>
                 </select>
-                <button type="button">Add Problem</button>
+                <button id="addProblemBtn" type="button">Add Problem</button>
             </form>
 
             <div class="table-panel">
@@ -157,7 +158,7 @@
                             <th>Status</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="problemTableBody">
                         <tr>
                             <td>Two Sum</td>
                             <td>LeetCode</td>
@@ -180,5 +181,8 @@
         <h2>CareerPilot</h2>
         <p>Build Skills. Track Progress. Achieve Your Career Goals.</p>
     </footer>
+
+    <script src="script.js">
+    </script>
 </body>
 </html>
